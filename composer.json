@@ -1,0 +1,35 @@
+{
+    "name": "ithilbert/typescript",
+    "type": "libary",
+    "license": "MIT",
+    "description": "Packe für meine TypeScript funktionen",
+    "keywords": [
+        "it-hilbert",
+        "laravel",
+        "homepage",
+        "TypeScript"
+    ],
+    "authors": [{
+        "name": "Jörg Hilbert",
+        "homepage": "https://www.it-hilbert.com",
+        "role": "Developer"
+    }],
+    "homepage": "https://www.it-hilbert.com",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ITHilbert\\TypeScript\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ITHilbert\\TypeScript\\TypeScriptServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}
