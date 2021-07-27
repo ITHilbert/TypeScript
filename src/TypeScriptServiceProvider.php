@@ -14,11 +14,6 @@ class TypeScriptServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-      //JavaScript kopieren nach Public
-      $this->publishes([
-        __DIR__ .'/js' => public_path('vendor/typescript'),
-      ]);
-
       //TypeScripts kopieren nach Public
       $this->publishes([
           __DIR__ .'/assets' => public_path('vendor/typescript'),
@@ -26,9 +21,9 @@ class TypeScriptServiceProvider extends ServiceProvider
 
 
 
-      //Ressources js und sass
+      //Ressources ts
       $this->publishes([
-          __DIR__.'/ts' => resource_path('ts'),
+          __DIR__.'/Ressources/ts' => resource_path('ts/vendor/typescript'),
       ]);
 
 
